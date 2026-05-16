@@ -1,0 +1,34 @@
+# =========================================
+# VisDrone Object Detection & Tracking
+# Requirements File
+# =========================================
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# YOLOv8
+ultralytics>=8.2.0
+
+# Computer Vision
+opencv-python>=4.8.0
+
+# Numerical Computing
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+
+# Tracking Support
+lap>=0.5.12
+filterpy>=1.4.5
+supervision>=0.18.0
+
+# Notebook Environment
+ipython>=8.0.0
+jupyter>=1.0.0
+
+# Optional Utilities
+pandas>=2.0.0
+Pillow>=10.0.0
+PyYAML>=6.0
