@@ -125,9 +125,9 @@ VisDrone-Project/
 
 | File | Description |
 |------|-------------|
-| `Outputs/Task-1/sample-drone-image.png` | Raw drone image without annotations |
-| `Outputs/Task-1/annotated-drone-image.png` | Sample image with all 10 original class bounding boxes |
-| `Outputs/Task-1/processed-dataset-visualization.png` | Sample image with remapped 2-class annotations |
+| `outputs/task1_outputs/sample-drone-image.png` | Raw drone image without annotations |
+| `outputs/task1_outputs/annotated-drone-image.png` | Sample image with all 10 original class bounding boxes |
+| `outputs/task1_outputs/processed-dataset-visualization.png` | Sample image with remapped 2-class annotations |
 
 ---
 
@@ -156,7 +156,7 @@ VisDrone-Project/
 
 | File | Description |
 |------|-------------|
-| `Outputs/Task-2/training-result.png` | Training curves: loss, precision, recall, mAP over 30 epochs |
+| `outputs/task2_outputs/training-result.png` | Training curves: loss, precision, recall, mAP over 30 epochs |
 
 ---
 
@@ -179,8 +179,8 @@ VisDrone-Project/
 
 | File | Description |
 |------|-------------|
-| `Outputs/Task-3/prediction.png` | YOLOv8 detection output with bounding boxes |
-| `Outputs/Task-3/detection+counting.png` | Annotated image with human and car count overlaid |
+| `outputs/task3_outputs/prediction.png` | YOLOv8 detection output with bounding boxes |
+| `outputs/task3_outputs/detection+counting.png` | Annotated image with human and car count overlaid |
 
 ---
 
@@ -214,8 +214,8 @@ VisDrone-Project/
 
 | File | Description |
 |------|-------------|
-| `Outputs/Task-4/image-tracking-result.png` | Sample frame with ByteTrack IDs and bounding boxes |
-| `Outputs/Task-4/video-tracking-result.avi` | Full annotated tracking video output |
+| `outputs/task4_outputs/image-tracking-result.png` | Sample frame with ByteTrack IDs and bounding boxes |
+| `outputs/task4_outputs/video-tracking-result.avi` | Full annotated tracking video output |
 
 ---
 
@@ -236,10 +236,10 @@ VisDrone-Project/
 
 | File | Description |
 |------|-------------|
-| `Outputs/Task-5/confusion_matrix.png` | Raw confusion matrix across all classes |
-| `Outputs/Task-5/confusion_matrix_normalized.png` | Normalized confusion matrix |
-| `Outputs/Task-5/prediction-output.png` | Sample prediction visualizations |
-| `Outputs/Task-5/model-performance-summary.png` | Bar chart: Precision, Recall, mAP50 |
+| `outputs/task5_outputs/confusion_matrix.png` | Raw confusion matrix across all classes |
+| `outputs/task5_outputs/confusion_matrix_normalized.png` | Normalized confusion matrix |
+| `outputs/task5_outputs/prediction-output.png` | Sample prediction visualizations |
+| `outputs/task5_outputs/model-performance-summary.png` | Bar chart: Precision, Recall, mAP50 |
 
 ---
 
@@ -326,7 +326,7 @@ Open `VisDrone_Project.ipynb` and execute tasks in order:
 | Task 1 | Dataset download & preprocessing  |
 | Task 2 | YOLOv8 model training              |
 | Task 3 | Inference & object counting        |
-| Task 4 | ByteTrack multi-object tracking    |
+| Task 4 | ByteTrack object tracking    |
 | Task 5 | Evaluation & visualization         |
 
 > Each task saves its state to a `.pkl` file on Google Drive. The next task loads this state automatically — you can safely restart the Colab runtime between tasks.
@@ -348,19 +348,19 @@ All visual outputs are organized under `Outputs/`:
 
 ```
 Outputs/
-├── Task1_outputs/
+├── task1_outputs/
 │   ├── sample-drone-image.png
 │   ├── annotated-drone-image.png
 │   └── processed-dataset-visualization.png
-├── Task2_outputs/
+├── task2_outputs/
 │   └── training-result.png
-├── Task3_outputs/
+├── task3_outputs/
 │   ├── prediction.png
 │   └── detection+counting.png
-├── Task4_outputs/
+├── task4_outputs/
 │   ├── image-tracking-result.png
 │   └── video-tracking-result.avi
-└── Task5_outputs/
+└── task5_outputs/
     ├── confusion_matrix.png
     ├── confusion_matrix_normalized.png
     ├── prediction-output.png
